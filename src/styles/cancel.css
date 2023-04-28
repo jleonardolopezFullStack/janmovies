@@ -1,0 +1,13 @@
+.cancel {
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancel-alert {
+  width: 80%;
+}

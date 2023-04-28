@@ -1,0 +1,44 @@
+.contact {
+  width: 1300px;
+  height: 600px;
+  border: 2px solid blueviolet;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  background: #000;
+  justify-content: center;
+  height: 540px;
+  gap: 30px;
+}
+.contact-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.contact-box .whatsappBody {
+  width: 100%;
+}
+
+.whatsappBody .whatsappImg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(../assets/imgBackgrounds/whatsapp_qr.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  overflow: hidden;
+}
+
+.whatsappImg img {
+  width: 100%;
+
+  position: relative;
+  top: -60px;
+}
+
+.formEmailMethod {
+}
