@@ -8,7 +8,6 @@ const Success = () => {
   useEffect(() => {
     console.log("entro");
     handleDeleteLocalStorageCart();
-    //deleteLocalStorageCart();
   }, []);
 
   return (

@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API = "http://localhost:5000";
+const API =
+  "https://janmoviesbackend-production.up.railway.app/" ||
+  "http://localhost:5000";
 //const API = process.env.URL;
 //const API2 = "http://localhost:5000/product";
 

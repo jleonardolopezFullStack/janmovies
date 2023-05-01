@@ -43,7 +43,6 @@ export const usePackStore = create((set) => ({
   },
   handleStatePackArrayProduct: (product) => {
     set((state) => ({
-      //statePack: { ...state.statePack, product: [...product, product] },
       stateProduct: [...state.stateProduct, product],
     }));
   },

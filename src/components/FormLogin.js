@@ -28,15 +28,11 @@ const FormLogin = () => {
     } catch (error) {
       console.log(error.response);
     }
-
-    //const res = await videoService.getVideos();
-    //console.log(res.data.product);
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <fieldset>
-        {/* <legend>Legend</legend> */}
         <div className="form-group">
           <label htmlFor="exampleInputEmail1" className="form-label mt-4">
             Email address

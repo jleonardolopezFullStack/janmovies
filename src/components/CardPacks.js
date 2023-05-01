@@ -10,7 +10,6 @@ import Discount from "./Discount";
 import { usePackStore } from "../store/packStore";
 import Name from "./Name";
 import IdStripe from "./IdStripe";
-//import NETFLIX from "../assets/imgProducts/NETFLIX2.png";
 
 const CardPacks = () => {
   const token = localStorage.getItem("token");
@@ -36,7 +35,7 @@ const CardPacks = () => {
 
   const handlePackChange = async (e) => {
     e.preventDefault();
-    // const res = await videoService.getPackService();
+
     const res = await videoService.postPackService(data);
     console.log(res);
     res
@@ -53,10 +52,7 @@ const CardPacks = () => {
     >
       <div className="card-header">PACK BOX</div>
       <div className="card-body">
-        <form
-          className="formCardPack"
-          /* onSubmit={handleSubmit} */
-        >
+        <form className="formCardPack">
           <Name />
           <Categorys />
           <Background />

@@ -41,7 +41,7 @@ const Cart = () => {
         return true;
       }
     });
-    console.log(findNameCart);
+    //console.log(findNameCart);
     if (findNameCart.quantity === 1) {
       handleDeleteOneProduct(item.name);
       console.log("llego a 1");
@@ -57,7 +57,7 @@ const Cart = () => {
   };
 
   const handleAddCart = (item) => {
-    console.log(item);
+    //console.log(item);
     const data = {
       name: item.name,
       price: item.price,
@@ -104,7 +104,7 @@ const Cart = () => {
       });
   };
 
-  console.log(mirar);
+  //console.log(mirar);
 
   return (
     <>

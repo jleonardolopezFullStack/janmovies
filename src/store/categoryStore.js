@@ -5,14 +5,7 @@ export const useCategoryStore = create((set, get) => ({
 
   hanldeStateCategory: (value) => {
     set((state) => ({
-      //count: state.count + value,
       stateCategory: value,
     }));
   },
-  /*     hanldeStateCategoryList: (value) => {
-      set((state) => ({
-        //count: state.count + value,
-        stateCategoryList: [...state.stateCategoryList, value],
-      }));
-    }, */
 }));

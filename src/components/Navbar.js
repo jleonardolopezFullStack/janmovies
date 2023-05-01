@@ -49,13 +49,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
-                /*         onClick={(e) => {
-                  e.preventDefault();
-                }} */
-                href="/cart"
-              >
+              <a className="nav-link" href="/cart">
                 Carrito {totalQuantity}
               </a>
             </li>

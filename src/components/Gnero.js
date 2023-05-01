@@ -13,7 +13,7 @@ const Backgrounds = () => {
     { genero: "Documental", color: "btn-outline-light" },
   ];
   const { handleStatePackBackground } = usePackStore();
-  //const { handleStatePackCategory } = usePackStore();
+
   const handleBackgroundByOption = (e) => {
     console.log(e.target.value);
     handleStatePackBackground(e.target.value);

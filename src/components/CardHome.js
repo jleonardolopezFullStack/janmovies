@@ -9,7 +9,7 @@ const CardHome = ({ category }) => {
   const token = localStorage.getItem("token");
   const navigate = useNavigate();
 
-  const { stateCart, totalPrice, totalQuantity } = useCartStore((state) => ({
+  const { stateCart, totalQuantity } = useCartStore((state) => ({
     stateCart: state.stateCart,
     totalPrice: state.totalPrice,
     totalQuantity: state.totalQuantity,

@@ -5,14 +5,7 @@ export const useProductStore = create((set, get) => ({
 
   hanldeStateProduct: (value) => {
     set((state) => ({
-      //count: state.count + value,
       stateProduct: value,
     }));
   },
-  /*     hanldeStateProductList: (value) => {
-      set((state) => ({
-        //count: state.count + value,
-        stateProductList: [...state.stateProductList, value],
-      }));
-    }, */
 }));

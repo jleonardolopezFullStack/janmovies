@@ -64,7 +64,7 @@ export const useCartStore = create(
         // console.log(value.name);
         const newStateCart = [];
         await stateCart.map((item) => {
-          item.name === value.name
+          return item.name === value.name
             ? newStateCart.push(value)
             : newStateCart.push(item);
         });
@@ -81,6 +81,7 @@ export const useCartStore = create(
           if (item.name !== value) {
             return item;
           }
+          return;
         });
         console.log(newStateCart);
         handleStateCartdeleteAll(newStateCart);
@@ -88,7 +89,7 @@ export const useCartStore = create(
       },
 
       handleStateCartSummaryPrice: () => {
-        const { stateCart, totalPrice, totalDiscount } = get();
+        const { stateCart } = get();
         let initialCost = 0;
         let initialQuantity = 0;
         let initialDiscount = 0;

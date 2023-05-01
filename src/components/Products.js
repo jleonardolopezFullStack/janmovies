@@ -6,12 +6,9 @@ import { useProductStore } from "../store/productStore";
 const Products = () => {
   const [product, setProduct] = useState([]);
   const [productSelected, setProductSelected] = useState({ name: "" });
-  /*   const { stateProduct } = useProductStore((state) => ({
-    stateProduct: state.stateProduct,
-  })); */
+
   const { hanldeStateProduct } = useProductStore();
-  //const { handleStatePackProduct } = usePackStore();
-  //console.log(product);
+
   const getProduct = async () => {
     const res = await videoService.getProductsService();
     setProduct(res.data.product[1]);
@@ -25,7 +22,6 @@ const Products = () => {
   const handleProductByOption = (e) => {
     setProductSelected({ name: e.target.value });
     hanldeStateProduct({ name: e.target.value });
-    //handleStatePackProduct(e.target.value);
   };
   //console.log(productSelected);
 

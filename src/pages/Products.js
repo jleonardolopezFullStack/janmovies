@@ -19,7 +19,7 @@ const Products = () => {
 
   const handleArrayProductsChange = (e) => {
     //console.log(e.target.name);
-    //setArrayProducts([...arrayProducts, e.target.name]);
+
     handleStatePackArrayProduct(e.target.name);
   };
 
@@ -38,9 +38,7 @@ const Products = () => {
                   <img
                     src={srcImg(`./${i.name}.png`)}
                     name={i.name}
-                    onClick={
-                      handleArrayProductsChange
-                    } /* src={`../src/assets/imgProducts/${i.name}.png`} */
+                    onClick={handleArrayProductsChange}
                   ></img>
                 </a>
               </li>

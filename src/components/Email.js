@@ -43,10 +43,7 @@ const Email = () => {
     <div className="card border-primary mb-3 contact-box">
       <div className="card-header">EMAIL</div>
       <div className="card-body">
-        <form
-          className="formEmailMethod"
-          /* onSubmit={handleSubmit} */
-        >
+        <form className="formEmailMethod">
           <small id="emailHelp" className="form-text text-muted">
             We'll never share your Info with anyone else.
           </small>
